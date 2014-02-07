@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>BabylonShooter</title>
+	<style>
+		html,body,#canvas {
+			width:100%;
+			height:100%;
+			padding:0;
+			margin:0;
+			overflow: hidden;
+			color: white;
+			font-family: sans-serif;
+		}
+		
+		#gui{
+			position:absolute;
+			width:100%;
+			height:100%;
+		}
+
+		#gui #gameOver{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0 auto;
+			text-align: center;
+			display: none;
+		}
+		#gui #score{
+			position: relative;
+			top: 20px;
+			left: 20px;
+		}
+	</style>
+	<script src="babylon.js"></script>
+	<script src="game.js"></script>
+</head>
+<body>
+	<div id="gui">
+		<h1 id="score">Score : 0</h1>
+		<h1 id="gameOver">Vous avez perdu le jeu</h1>
+	</div>
+	<canvas id="canvas"></canvas>
+</body>
+</html>
